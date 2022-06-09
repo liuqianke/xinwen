@@ -1,0 +1,43 @@
+<view class="feedback">
+  <image src="../../icons/sey-xiexin.png" mode="widthFix"></image>
+  <button open-type="contact" plain style="width: 250rpx;">意见反馈</button>
+</view>
+<view class="user_info_wrap">
+  <view wx:if="{{userinfo.avatarUrl}}" class="user_img_wrap">
+
+    <view class="user_info">
+      <image class="user_icon" src="{{userinfo.avatarUrl}}"></image>
+      <view class="user_name">{{userinfo.nickName}}</view>
+    </view>
+  </view>
+  <view wx:else class="user_btn">
+    <!-- <button type="primary" plain  bindtap="getUserProfile" > 登录 </button>
+    <image mode="widthFix" src="../../icons/log.png"></image>
+    <view bindtap="getUserProfile" class="log">微信用户</view>  -->
+    <image src="../../icons/头像.png" mode="widthFix"></image>
+    <view bindtap="getUserProfile">微信用户</view>
+  </view>
+</view>
+<view class="collect-wrap">
+  <view class="head">
+    <view>我的收藏</view>
+    <view class="his_num">({{collectNums}})</view>
+  </view>
+
+
+  <navigator wx:for="{{collect}}" wx:for-item="item" wx:key="uniquekey" url="/pages/news_detail/index?uniquekey={{item.uniquekey}}">
+    <view class="detail">
+      <view class="title">{{item.detail.title}}</view>
+    
+      <view class="a-d">
+        <view class="aurhor">{{item.detail.author_name}}</view>
+        <view class="date">{{item.detail.date}}</view>
+      </view>
+    </view>
+    <view class="img">
+      <image src="{{item.detail.thumbnail_pic_s}}" mode="widthFix"></image>
+    </view>
+
+
+  </navigator>
+</view>

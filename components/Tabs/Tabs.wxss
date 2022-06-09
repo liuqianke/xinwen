@@ -1,0 +1,34 @@
+/* components/Tabs/Tabs.wxss */
+.tabs .tabs_title {
+  /* display: flex; */
+  padding: 15rpx 0;
+}
+/**index.wxss**/
+scroll-view {
+  width: 100%;
+ white-space: nowrap;
+ }
+.tabs .tabs_title .title_item {
+  text-align: center;
+  display: inline-block;
+  width: 130rpx;
+  height: 40rpx;
+  color: #777777;
+  font-size: 34rpx
+  ;
+}
+
+.tabs .tabs_title .active {
+  color: #333333;
+  font-weight: 500;
+}
+.red{
+  width: 15rpx;
+  height: 15rpx;
+  border:2px solid #E10000 ;
+  border-radius: 50%;
+  position: relative;
+  left: 102rpx;
+  top: -50rpx
+  ;
+}

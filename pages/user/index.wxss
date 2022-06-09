@@ -1,0 +1,118 @@
+.feedback{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: left; */
+}
+.feedback image{
+    width: 40rpx;
+    margin-left: 30rpx;
+
+}
+.feedback button{
+  border: none;
+  font-size: 30rpx
+  ;
+  /* border: 1px solid red; */
+  font-weight: 300;
+  position: relative;
+  left: -270rpx
+  ;
+
+
+}
+.user_info_wrap {
+    height: 34vh;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    border-bottom:5px solid #e5e5e5 ;
+  }
+  .user_info_wrap .user_img_wrap {
+    position: relative;
+  }
+  .user_info_wrap .user_img_wrap .user_bg {
+    /* height: 50vh; */
+    width: 100%;
+    filter: blur(10rpx);
+  }
+  .user_info_wrap .user_img_wrap .user_info {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    text-align: center;
+  }
+  .user_info_wrap .user_img_wrap .user_info .user_icon {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+  }
+  .user_info_wrap .user_img_wrap .user_info .user_name {
+    color: black;
+    margin-top: 40rpx;
+  }
+  .user_info_wrap .user_btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    font-size: 38rpx;
+  }
+  .user_info_wrap .user_btn image{
+      width: 200rpx
+      ;
+  }
+ .log{
+      color: black;
+  }
+  .collect-wrap{
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .collect-wrap .head{
+    display: flex;
+    font-size: 30rpx;
+    font-weight: 500;
+    margin-bottom: 23rpx;
+  }
+  .collect-wrap .head .his_num{
+    margin-left: 5px;
+  }
+  .collect-wrap navigator{
+  display: flex;
+  flex-direction: row;
+  border-bottom:1px solid #e5e5e5;
+  margin-bottom: 10rpx;
+  }
+  .collect-wrap navigator:first-child{
+    margin-top: 10px;
+  }
+  .collect-wrap .detail{
+    flex: 3;
+  }
+  .collect-wrap .detail .title{
+    height: 50px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .collect-wrap .detail .a-d{
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #808080;
+  }
+  .collect-wrap .detail .a-d .aurhor{
+    margin-right: 10px;
+  }
+  .collect-wrap .img{
+    flex: 1;
+  }
+  .collect-wrap .img image{
+    width: 230rpx;
+  }

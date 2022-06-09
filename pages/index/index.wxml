@@ -1,0 +1,76 @@
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+
+  <block wx:if="{{tabs[0].isActive}}">
+    <view class="top">
+      <navigator class="goods_item " wx:for="{{topList}}" wx:key="uniquekey" url="/pages/news_detail/index?uniquekey={{item.uniquekey}}">
+   
+        <view class="pic3"  >
+          <view class="title">{{item.title}}</view>
+          <view class="imgwrap" >
+            <image src="{{item.thumbnail_pic_s}}" mode="widthFix"></image>
+            <image src="{{item.thumbnail_pic_s02}}" mode="widthFix"></image>
+            <image src="{{item.thumbnail_pic_s03}}" mode="widthFix"></image>
+          </view>
+          <text class="name">{{item.author_name}}</text>
+          <text >{{item.date}}</text>
+       
+         
+
+
+
+        </view>
+
+
+
+
+
+
+
+
+
+
+
+
+      </navigator>
+    </view>
+
+  </block>
+  <block wx:elif="{{tabs[1].isActive}}">
+    <view class="top">
+      <navigator class="goods_item " wx:for="{{guoneiList}}" wx:key="uniquekey" url="/pages/news_detail/index?uniquekey={{item.uniquekey}}">
+   
+        <view class="pic3"  >
+          <view class="title">{{item.title}}</view>
+          <view class="imgwrap" >
+            <image src="{{item.thumbnail_pic_s}}" mode="widthFix"></image>
+            <image src="{{item.thumbnail_pic_s02}}" mode="widthFix"></image>
+            <image src="{{item.thumbnail_pic_s03}}" mode="widthFix"></image>
+          </view>
+          <text class="name">{{item.author_name}}</text>
+          <text >{{item.date}}</text>
+
+        </view>
+
+      </navigator>
+    </view></block>
+  <block wx:elif="{{tabs[2].isActive}}">
+    <view class="top">
+      <navigator class="goods_item " wx:for="{{guojiList}}" wx:key="uniquekey" url="/pages/news_detail/index?uniquekey={{item.uniquekey}}">
+   
+        <view class="pic3"  >
+          <view class="title">{{item.title}}</view>
+          <view class="imgwrap" >
+            <image src="{{item.thumbnail_pic_s}}" mode="widthFix"></image>
+            <image src="{{item.thumbnail_pic_s02}}" mode="widthFix"></image>
+            <image src="{{item.thumbnail_pic_s03}}" mode="widthFix"></image>
+          </view>
+          <text class="name">{{item.author_name}}</text>
+          <text >{{item.date}}</text>
+
+        </view>
+
+      </navigator>
+    </view>
+    </block>
+
+</Tabs>

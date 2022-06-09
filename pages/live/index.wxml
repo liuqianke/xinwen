@@ -1,0 +1,28 @@
+<!-- <view class="top">
+    <navigator class="video_item " wx:for="{{videoList}}" wx:key="hot_value">
+        <view class="item_wrap">
+            <image src="{{item.item_cover}}" mode="widthFix"></image>
+            <view class="mask">
+                <view class="title">{{item.title}}</view>
+                <view class="count">{{item.play_count}}次播放</view>
+            </view>
+
+        </view>
+
+        <view class="item_bottom">
+            <view>{{item.author}}</view>
+            <view>
+                <text class="iconfont   {{isCollect?'icon-shoucang1':'icon-shoucang'}} "></text>
+            </view>
+        </view>
+    </navigator>
+</view>
+<view >
+
+</view> -->
+<view class="videoNews" wx:for="{{videoList}}" wx:key="hot_value">
+    <view class="videoNewsTitle">
+        {{item.title}}
+    </view>
+    <video class="videoNewsVideo" controls poster="{{item.item_cover}}" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+</view>

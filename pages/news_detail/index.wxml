@@ -1,0 +1,27 @@
+<view class="news-wrap">
+    <view class="title">{{goodsObj.title}}</view>
+
+
+    <view class="content">
+        <rich-text nodes="{{goodsObj.content}}"></rich-text>
+
+    </view>
+</view>
+<view class="bottom">
+    <view>
+        <image src="../../icons/pinglun.png" mode="widthFix"></image>
+    </view>
+    <view bindtap="handleCollect">
+        <text class="iconfont   {{isCollect?'icon-shoucang1':'icon-shoucang'}} "></text>
+    </view>
+
+    <view>
+        <button style="width:10rpx;border:none" open-type="share" plain>
+            <image src="../../icons/weixin.png" mode="widthFix"></image>
+    </button>
+       
+    </view>
+    <view>
+        <image src="../../icons/pyq.png" mode="widthFix"></image>
+    </view>
+</view>

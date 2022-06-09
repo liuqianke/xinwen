@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Tabs":"../../components/Tabs/Tabs"
+  },
+  "navigationBarTitleText": "新闻精选",
+  "navigationBarBackgroundColor": "#E10000",
+  "navigationBarTextStyle": "white"
+}
